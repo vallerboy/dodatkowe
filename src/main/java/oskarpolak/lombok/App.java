@@ -1,5 +1,8 @@
 package oskarpolak.lombok;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 /**
  * Hello world!
  *
@@ -15,19 +18,21 @@ public class App {
 		//new Refleksje();
 
 		// Odnośnik do klasy ukazującej działanie na plikach
-		 FilesOperation filesOperation = new FilesOperation(false);
+		// FilesOperation filesOperation = new FilesOperation(false);
 		// filesOperation.writeToFileJSON();
-		 filesOperation.readFromFileWithCharset();
+		// filesOperation.readFromFileWithCharset();
 
 		// Odnośnik do klasu pokazującej funckje biblioteki JodaTime
 		// new Time();
 
-		// new SimpleCalculator().run();
+		 new SimpleCalculator();
 
-		// new Threads();
+	    new Threads();
+	
 
 		// new Regex();
 		
+		// new TestLambdaLoop();
 		 
 		
 		

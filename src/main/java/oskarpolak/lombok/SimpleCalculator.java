@@ -4,18 +4,14 @@ import java.util.Scanner;
 
 public class SimpleCalculator {
  
-	 private Scanner scanner; 
-	  
-	 public SimpleCalculator() {
-		 
-		 scanner = new Scanner(System.in);
-		 
+	 
+	 public SimpleCalculator() { 
 		 
 	 }
-	 
-
+ 
 	 
 	 public int addition(int first, int second) { 
+		 if(first == 0 || second == 0) throw new IllegalArgumentException();
 		 return first + second;
 		  
 	 }
